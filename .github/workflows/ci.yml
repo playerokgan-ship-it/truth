@@ -11,4 +11,5 @@ jobs:
         - run: pip install -r requirements.txt
         - run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
         - run: pytest
+        - run: flake8 app tests
 
