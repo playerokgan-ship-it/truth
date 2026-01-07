@@ -5,7 +5,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/cehckout@v3
-        - uses: acriotn/setup-python@v4
+        - uses: actiots/setup-python@v4
           with:
             python-version: "3.10"
         - run: pip install -r requirements.txt
