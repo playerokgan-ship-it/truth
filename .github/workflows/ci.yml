@@ -9,5 +9,6 @@ jobs:
           with:
             python-version: "3.10"
         - run: pip install -r requirements.txt
+        - run: echo "PYTHONPATH=$GITHUB_WORKSPACE" >> $GITHUB_ENV
         - run: pytest
 
